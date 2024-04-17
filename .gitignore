@@ -1,0 +1,16 @@
+import numpy as np
+def calcular_valores_vectores_propios(matriz):
+    # Calcular los valores propios y vectores propios
+    valores_propios, vectores_propios = np.linalg.eig(matriz)
+    return valores_propios, vectores_propios
+# Definir una matriz de ejemplo
+matriz_ejemplo = np.array([[1, 2, 3],
+                           [4, 5, 6],
+                           [7, 8, 9]])
+# Calcular los valores propios y vectores propios de la matriz de ejemplo
+valores, vectores = calcular_valores_vectores_propios(matriz_ejemplo)
+# Imprimir los resultados
+print("Valores propios:")
+print(valores)
+print("\nVectores propios:")
+print(vectores)
